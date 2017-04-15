@@ -12,9 +12,11 @@ def main() :
     if len(sys.argv) < 2: PrintUsage()
     
     cmd = sys.argv[1]
-    if cmd not in COMMANDS: PrintUsage()
-
-    print("This program is running in " + os.getcwd())
+    if cmd not in COMMANDS: 
+        mod = __import__('datagon.generator.generator', fromlist=[''])
+        func = mod.__dict__['GenerateData']
+        func(sys.argv[1:])
+        return 
 
     f = ['datagon'] + COMMANDS[cmd].split('.')
     mod = __import__('.'.join(f[:-1]), fromlist=[''])

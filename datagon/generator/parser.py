@@ -85,6 +85,9 @@ def Parser(tokens):
             current += 1
             return rt
         
+        if token['value'] == ',':
+            current += 1
+            return Walk()
         if token['type'] == 'format':
             current += 1
             return Format(token['value'])

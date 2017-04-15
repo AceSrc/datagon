@@ -12,3 +12,7 @@ datagon/checker/__init__.py
 datagon/checker/checker.py
 datagon/generator/__init__.py
 datagon/generator/generator.py
+datagon/generator/parser.py
+datagon/generator/tokenizer.py
+datagon/generator/translator.py
+datagon/generator/traverser.py

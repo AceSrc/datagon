@@ -53,8 +53,9 @@ def Translator(ast):
 
     def HandleFunction(node):
         print('handling function: ' + node.type)
+        print(node.params)
         cases = {
-            'int': lambda x: Output(GetRandomInt(TranslateNode(node.params[0], x))),
+            'print': lambda x: Output(GetRandomInt(TranslateNode(node.params[0], x))),
             'add': lambda x: Add(TranslateNode(x.params[0], x), TranslateNode(x.params[1], x)),
             'sub': lambda x: Sub(TranslateNode(x.params[0], x), TranslateNode(x.params[1], x)), 
             'mul': lambda x: Mul(TranslateNode(x.params[0], x), TranslateNode(x.params[1], x)),

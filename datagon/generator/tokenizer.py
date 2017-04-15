@@ -87,7 +87,15 @@ def Tokenizer(input):
             current += 1
             continue
         
-        if char == ' ' or char == '\r' or char == ',':
+        if char == ',':
+            tokens.append({
+                'type': 'format',
+                'value': ','
+            })
+            current += 1
+            continue
+
+        if char == ' ' or char == '\r':
             current += 1
             continue
         print("Invaild Syntax " + char)
