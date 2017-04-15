@@ -50,7 +50,7 @@ print((0, 233])
 ### 变量
 变量可以为任意小写字母组成的字符串, 可以进行赋值和引用
 ```
-num = [1, 100]
+set(num, [1, 100])
 print(num)
 ```
 
@@ -61,6 +61,7 @@ print(num)
 * permutation(n): 输出一个长度n的随机排列
 * weight(n, interval): 输出一个长度为n的权值数组, 其取值区间为interval
 * add(a, b), sub(a, b), mul(a, b): 进行整数间的加减乘
+* repeat(n, param1, param2...)
 
 ### 格式控制
 默认描述文件中遇到'\n', 输出结果就会进行换行, 但若在行末添加字符#, 可以取消当前的换行.

@@ -1,0 +1,5 @@
+set(n, (0, 20))#
+set(m, (0, 20))#
+print(n) print(m)
+repeat(m, print([1, n]), print([1, n]), print((0, 200)))
+

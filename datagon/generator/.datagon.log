@@ -1,0 +1,186 @@
+------ Starting Generating Data. ------
+set(n, (0, 20))#
+set(m, (0, 20))#
+print(n) print(m)
+repeat(m, print([1, n]), print([1, n]), print((0, 200)))
+
+
+Processing token 0 : {'type': 'string', 'value': 'set'}
+Processing token 2 : {'type': 'string', 'value': 'n'}
+Processing token 3 : {'type': 'format', 'value': ','}
+Processing token 4 : {'type': 'paren', 'value': '('}
+    Type: Interval
+Processing token 5 : {'type': 'number', 'value': '0'}
+Processing token 6 : {'type': 'format', 'value': ','}
+Processing token 7 : {'type': 'number', 'value': '20'}
+Processing token 10 : {'type': 'format', 'value': 'clearline'}
+Processing token 11 : {'type': 'format', 'value': 'newline'}
+Processing token 12 : {'type': 'string', 'value': 'set'}
+Processing token 14 : {'type': 'string', 'value': 'm'}
+Processing token 15 : {'type': 'format', 'value': ','}
+Processing token 16 : {'type': 'paren', 'value': '('}
+    Type: Interval
+Processing token 17 : {'type': 'number', 'value': '0'}
+Processing token 18 : {'type': 'format', 'value': ','}
+Processing token 19 : {'type': 'number', 'value': '20'}
+Processing token 22 : {'type': 'format', 'value': 'clearline'}
+Processing token 23 : {'type': 'format', 'value': 'newline'}
+Processing token 24 : {'type': 'string', 'value': 'print'}
+Processing token 26 : {'type': 'string', 'value': 'n'}
+Processing token 28 : {'type': 'string', 'value': 'print'}
+Processing token 30 : {'type': 'string', 'value': 'm'}
+Processing token 32 : {'type': 'format', 'value': 'newline'}
+Processing token 33 : {'type': 'string', 'value': 'repeat'}
+Processing token 35 : {'type': 'string', 'value': 'm'}
+Processing token 36 : {'type': 'format', 'value': ','}
+Processing token 37 : {'type': 'string', 'value': 'print'}
+Processing token 39 : {'type': 'paren', 'value': '['}
+    Type: Interval
+Processing token 40 : {'type': 'number', 'value': '1'}
+Processing token 41 : {'type': 'format', 'value': ','}
+Processing token 42 : {'type': 'string', 'value': 'n'}
+Processing token 45 : {'type': 'format', 'value': ','}
+Processing token 46 : {'type': 'string', 'value': 'print'}
+Processing token 48 : {'type': 'paren', 'value': '['}
+    Type: Interval
+Processing token 49 : {'type': 'number', 'value': '1'}
+Processing token 50 : {'type': 'format', 'value': ','}
+Processing token 51 : {'type': 'string', 'value': 'n'}
+Processing token 54 : {'type': 'format', 'value': ','}
+Processing token 55 : {'type': 'string', 'value': 'print'}
+Processing token 57 : {'type': 'paren', 'value': '('}
+    Type: Interval
+Processing token 58 : {'type': 'number', 'value': '0'}
+Processing token 59 : {'type': 'format', 'value': ','}
+Processing token 60 : {'type': 'number', 'value': '200'}
+Processing token 64 : {'type': 'format', 'value': 'newline'}
+Processing token 65 : {'type': 'format', 'value': 'newline'}
+handling function: set
+[<parser.String instance at 0x7f8fb386b5f0>, <parser.Interval instance at 0x7f8fb386b6c8>]
+Set variable: n = 14
+Handling Format: clearline
+Clean
+Handling Format: newline
+handling function: set
+[<parser.String instance at 0x7f8fb386b830>, <parser.Interval instance at 0x7f8fb386b908>]
+Set variable: m = 18
+Handling Format: clearline
+Clean
+Handling Format: newline
+handling function: print
+[<parser.String instance at 0x7f8fb386ba70>]
+handling function: print
+[<parser.String instance at 0x7f8fb386bb48>]
+Handling Format: newline
+handling function: repeat
+[<parser.String instance at 0x7f8fb386bc68>, <parser.Function instance at 0x7f8fb386bcb0>, <parser.Function instance at 0x7f8fb386be60>, <parser.Function instance at 0x7f8fb386bfc8>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386be18>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb386bf80>]
+handling function: print
+[<parser.Interval instance at 0x7f8fb3877128>]
+Handling Format: newline
+Handling Format: newline

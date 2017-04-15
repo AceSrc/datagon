@@ -51,6 +51,12 @@ def Translator(ast):
         for i in range(0, n):
             Output(GetRandomInt(interval))    
 
+    def RepeatOutput(node):
+        times = TranslateNode(node.params[0], node)
+        for i in range(0, times):
+            TranslateArray(node)
+            AddNewLine()
+
     def HandleFunction(node):
         print('handling function: ' + node.type)
         print(node.params)
@@ -61,6 +67,8 @@ def Translator(ast):
             'mul': lambda x: Mul(TranslateNode(x.params[0], x), TranslateNode(x.params[1], x)),
             'permutation': lambda x: AddPermutation(TranslateNode(x.params[0], x)),
             'weight': lambda x: AddWeight(TranslateNode(x.params[0], x), TranslateNode(x.params[1], x)),
+            'repeat': lambda x: RepeatOutput(x),
+            'set': lambda x: SetVariableValue(x.params[0].name, TranslateNode(x.params[1], x))
         }
         return cases.get(node.type, lambda x: None)(node)
 
@@ -86,13 +94,14 @@ def Translator(ast):
         }
         return cases.get(node.value, lambda x: None)(node)
 
-    def GetVariableValue(node):
-        return symbol.get(node.name, "Not Defined")
+    def GetVariableValue(name):
+        return symbol.get(name, name)
 
-    def SetVariableValue(node):
-        symbol[node.name] = GetRandomInt(TranslateNode(node.value, node))
-        print('Set variable: ' + node.name + ' = ' + str(symbol[node.name]))
-        return symbol[node.name]
+    def SetVariableValue(name, value):
+        value = GetRandomInt(value)
+        symbol[name] = value
+        print('Set variable: ' + str(name) + ' = ' + str(symbol[name]))
+        return symbol[name]
 
     def TranslateArray(node):
         for x in node.params:
@@ -104,7 +113,7 @@ def Translator(ast):
             parser.Number: lambda x: x.value,
             parser.Interval: 
                 lambda x: [TranslateNode(x.left, x) + x.leftoffset, TranslateNode(x.right, x) + x.rightoffset],
-            parser.String: lambda x: GetVariableValue(x),
+            parser.String: lambda x: GetVariableValue(x.name),
             parser.Setvar: lambda x: SetVariableValue(x),
             parser.Program: lambda x: TranslateArray(x),
             parser.Format: lambda x: HandleFormat(x),
