@@ -95,14 +95,14 @@ permutation(num)
 会输出一个长度在1到100的排列
 
 ```
-numa = (0, 100]
-numb = add(numa, (0, 100])
+numa = (0, 100]#
+numb = add(numa, (0, 100])#
 print(numa)
 print(numb)
 ```
 会输出两个整数, 其中num2一定大于num1
 
-##TO-DO List
+## TO-DO List
 
 * 实数支持
 * 字符串支持
