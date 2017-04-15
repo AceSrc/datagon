@@ -1,0 +1,36 @@
+------ Starting Generating Data. ------
+var = [5, 9]#
+int(var)
+permutation(var)
+weight(var, [0, 10))
+
+Processing token 0 : {'type': 'string', 'value': 'var'}
+Processing token 2 : {'type': 'paren', 'value': '['}
+    Type: Interval
+Processing token 3 : {'type': 'number', 'value': '5'}
+Processing token 4 : {'type': 'number', 'value': '9'}
+Processing token 6 : {'type': 'format', 'value': 'clearline'}
+Processing token 7 : {'type': 'format', 'value': 'newline'}
+Processing token 8 : {'type': 'string', 'value': 'int'}
+Processing token 10 : {'type': 'string', 'value': 'var'}
+Processing token 12 : {'type': 'format', 'value': 'newline'}
+Processing token 13 : {'type': 'string', 'value': 'permutation'}
+Processing token 15 : {'type': 'string', 'value': 'var'}
+Processing token 17 : {'type': 'format', 'value': 'newline'}
+Processing token 18 : {'type': 'string', 'value': 'weight'}
+Processing token 20 : {'type': 'string', 'value': 'var'}
+Processing token 21 : {'type': 'paren', 'value': '['}
+    Type: Interval
+Processing token 22 : {'type': 'number', 'value': '0'}
+Processing token 23 : {'type': 'number', 'value': '10'}
+Processing token 26 : {'type': 'format', 'value': 'newline'}
+Set variable: var = 7
+Handling Format: clearline
+Clean
+Handling Format: newline
+handling function: int
+Handling Format: newline
+handling function: permutation
+Handling Format: newline
+handling function: weight
+Handling Format: newline

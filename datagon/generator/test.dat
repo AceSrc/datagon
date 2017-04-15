@@ -1,0 +1,4 @@
+var = [5, 9]#
+int(var)
+permutation(var)
+weight(var, [0, 10))

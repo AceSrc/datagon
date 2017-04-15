@@ -1,0 +1,3 @@
+[console_scripts]
+datagon = datagon.cli:main
+
