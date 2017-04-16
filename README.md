@@ -61,7 +61,7 @@ print(num)
 * permutation(n): 输出一个长度n的随机排列
 * weight(n, interval): 输出一个长度为n的权值数组, 其取值区间为interval
 * add(a, b), sub(a, b), mul(a, b): 进行整数间的加减乘
-* repeat(n, param1, param2...)
+* repeat(n, param1, param2...): 重复输出n行 每行的格式由param1 param2..
 
 ### 格式控制
 默认描述文件中遇到'\n', 输出结果就会进行换行, 但若在行末添加字符#, 可以取消当前的换行.
@@ -90,18 +90,26 @@ print(num)
 ## 使用例子
 
 ```
-num = (0, 100]
+set(num, (0, 100])#
 permutation(num)
 ```
 会输出一个长度在1到100的排列
 
 ```
-numa = (0, 100]#
-numb = add(numa, (0, 100])#
+set(numa, (0, 100])#
+set(numb, add(numa, (0, 100]))#
 print(numa)
 print(numb)
 ```
 会输出两个整数, 其中num2一定大于num1
+
+```
+set(n, (0, 20)) set(m, (0, 20))#
+print(n) print(m)
+repeat(m, print([1, n]), print([1, n]), print((0, 100))
+```
+可以生成一个图(可能有重边, 也可能不连通)
+
 
 ## TO-DO List
 
